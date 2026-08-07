@@ -1,5 +1,5 @@
 {% set name = "conda-forge-feedstock-ops" %}
-{% set version = "0.16.1" %}
+{% set version = "0.17.0" %}
 {% set python_min = "3.11" %} 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/regro/conda-forge-feedstock-ops/archive/refs/tags/{{ version }}.tar.gz
-  sha256: d0f51740a86703e777a3329587588ae6fd9c5bef1e7d7d46288632d800a914c8
+  sha256: 76eb476b17b042cdcc4dd26c993dd65c8f31afc8542fb1d185fb4298d644ed75
 
 build:
   noarch: python
@@ -31,13 +31,13 @@ requirements:
     - conda-build >=3.27
     - conda-forge-metadata >=0.11.0
     - conda-package-handling
-    - conda-smithy >=3.40.1
+    - conda-smithy >=2026
     - orjson
     - pixi
-    - py-rattler >=0.22.0,<0.23a0
+    - py-rattler >=0.22.0,<0.26a0
     - pydantic-settings >=2.8.1,<3.0.0
     - python >={{ python_min }}
-    - rattler-build-conda-compat >=0.0.2,<2.0.0a0
+    - rattler-build-conda-compat >=1.4.15,<2.0.0a0
     - requests
     - ruamel.yaml
     - ruamel.yaml.jinja2
