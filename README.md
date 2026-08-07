@@ -16,7 +16,9 @@ Current build status
 <table><tr>
     <td>All platforms:</td>
     <td>
-      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+      <a href="https://github.com/conda-forge/conda-forge-feedstock-ops-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/conda-forge-feedstock-ops-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
     </td>
   </tr>
 </table>
@@ -38,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `conda-forge-feedstock-ops` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install conda-forge-feedstock-ops
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install conda-forge-feedstock-ops
 ```
 
-It is possible to list all of the versions of `conda-forge-feedstock-ops` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add conda-forge-feedstock-ops
+# for installing globally
+pixi global install conda-forge-feedstock-ops
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `conda-forge-feedstock-ops` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search conda-forge-feedstock-ops --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search conda-forge-feedstock-ops --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search conda-forge-feedstock-ops --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -74,6 +118,8 @@ mamba repoquery whoneeds conda-forge-feedstock-ops --channel conda-forge
 # List dependencies of `conda-forge-feedstock-ops`:
 mamba repoquery depends conda-forge-feedstock-ops --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
