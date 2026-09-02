@@ -1,6 +1,5 @@
 {% set name = "conda-forge-feedstock-ops" %}
-{% set version = "0.18.6" %}
-{% set python_min = "3.11" %} 
+{% set version = "0.18.6" %} 
 
 package:
   name: {{ name|lower }}
@@ -32,6 +31,7 @@ requirements:
     - conda-forge-metadata >=0.11.0
     - conda-package-handling
     - conda-smithy >=2026
+    - conda-recipe-manager >=0.10.6
     - orjson
     - pixi
     - py-rattler >=0.22.0,<0.26a0
